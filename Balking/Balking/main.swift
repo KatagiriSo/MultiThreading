@@ -8,5 +8,19 @@
 
 import Foundation
 
-print("Hello, World!")
+let state = CurrentState(state: "")
+let stateSaver = StateSaver(state:state)
+let user = User(state: state)
+
+DispatchQueue.global().async {
+    stateSaver.run()
+}
+
+DispatchQueue.global().async {
+    user.run()
+}
+
+while true {
+    
+}
 
