@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Balking/Balking.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:GuardedSuspension/GuardedSuspension.xcodeproj">
    </FileRef>
    <FileRef
