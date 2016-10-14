@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:GuardedSuspension/GuardedSuspension.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Immutable/Immutable.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CountingSemaphore/CountingSemaphore.xcodeproj">
    </FileRef>
    <FileRef

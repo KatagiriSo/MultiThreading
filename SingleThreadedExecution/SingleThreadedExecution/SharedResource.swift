@@ -1,5 +1,5 @@
 //
-//  Gate.swift
+//  SharedResource.swift
 //  SingleThreadedExecution
 //
 //  Created by 片桐奏羽 on 2016/10/14.
