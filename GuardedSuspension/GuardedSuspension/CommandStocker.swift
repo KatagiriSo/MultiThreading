@@ -25,6 +25,7 @@ public class CommandStocker {
         objc_sync_enter(self)
 
         
+            // guard condition
             while self.list.count == 0 {
                 print("wait..")
                 objc_sync_exit(self)
@@ -58,10 +59,8 @@ public class CommandStocker {
         list.append(command)
         objc_sync_exit(self)
 
-        if list.count == 1 {
-            let ret = semaphore.signal()
-            print("signal \(ret)")
-        }
+        let ret = semaphore.signal()
+        print("signal \(ret)")
 
     }
     
