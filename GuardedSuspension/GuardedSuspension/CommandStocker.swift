@@ -22,9 +22,14 @@ public class CommandStocker {
         
         var command:Command? = nil
         
+        objc_sync_enter(self)
+
+        
             while self.list.count == 0 {
                 print("wait..")
+                objc_sync_exit(self)
                 semaphore.wait()
+                objc_sync_enter(self)
             }
             
             
@@ -43,12 +48,16 @@ public class CommandStocker {
                 command = Command(name: "dummy")
             }
     
+        objc_sync_exit(self)
         
         return command!
     }
     
     public func putCommand(command:Command) {
+        objc_sync_enter(self)
         list.append(command)
+        objc_sync_exit(self)
+
         if list.count == 1 {
             let ret = semaphore.signal()
             print("signal \(ret)")
