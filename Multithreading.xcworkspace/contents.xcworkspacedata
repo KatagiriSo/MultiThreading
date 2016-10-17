@@ -2,6 +2,24 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ActiveObject/ActiveObject.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ThreadSpecificStorage/ThreadSpecificStorage.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TwoPhaseTermination/TwoPhaseTermination.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Future/Future.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:WorkerThread/WorkerThread.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ThreadPerMessage/ThreadPerMessage.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ReadWriteLock/ReadWriteLock.xcodeproj">
    </FileRef>
    <FileRef
