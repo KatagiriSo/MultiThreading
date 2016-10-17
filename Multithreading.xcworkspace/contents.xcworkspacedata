@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ProducerConsumer/ProducerConsumer.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Balking/Balking.xcodeproj">
    </FileRef>
    <FileRef
