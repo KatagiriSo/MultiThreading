@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+public class Result<T> {
+    public func getResult()->T {
+        assert(false, "abstract function")
+    }
+}
+
+
+
+
+
+

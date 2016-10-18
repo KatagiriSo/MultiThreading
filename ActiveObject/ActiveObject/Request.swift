@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+public class Request<T> {
+    internal let exe:ActiveObjectExe
+    internal let future:FutureResult<T>?
+    
+    init(exe:ActiveObjectExe, future:FutureResult<T>?) {
+        self.exe = exe
+        self.future = future
+    }
+    
+    public func execute() {
+        assert(false, "abstract class")
+    }
+}
