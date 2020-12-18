@@ -1,5 +1,5 @@
 # MultiThreading
-Swift3 MultiThreading example
+Swift5 MultiThreading example
 
 
 * Single Threaded Execution
